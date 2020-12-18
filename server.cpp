@@ -53,6 +53,7 @@ int main()
     {
         perror("connect");
         return 1;
+    }
     //设置服务器上的socket为监听状态
     if (listen(serverSocket, 5) < 0)
     {
@@ -93,17 +94,22 @@ int main()
         // buffer[iDataNum] = '\0';
         if (strcmp(buffer, "quit") == 0)
             break;
-        A *a;
-        a = (A *)buffer;
-        printf("i=%d        j=%d        opt=%d\n", a->i, a->j, a->opt);
+
+        // A a;
+        // a.i = 0;
+        // a.j = 0;
+        // a.opt = 0;
+
+        A *pa;
+        // pa = &a;
+        pa = (A *)buffer;
+        printf("i=%d        j=%d        opt=%d\n", pa->i, pa->j, pa->opt);
         // 处理+发消息————————————————————————————————————————————————————————————————
         printf("发送消息:");
-        strcpy(buffer, cul(a->i, a->j, a->opt));
+        strcpy(buffer, cul(pa->i, pa->j, pa->opt));
         printf("\n");
         printf("%s\n", buffer);
         send(client, buffer, strlen(buffer), 0);
-        if (strcmp(buffer, "quit") == 0)
-            break;
     }
     close(serverSocket);
     return 0;

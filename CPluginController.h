@@ -19,7 +19,7 @@ public:
 
 	bool ProcessHelp(void);
 
-	bool ProcessRequest(int FunctionID);
+	// bool ProcessRequest(int FunctionID);
 
 	bool IfProcess(char *Function);
 

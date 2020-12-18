@@ -24,14 +24,14 @@ public:
 	{
 	}
 
-	virtual void Print()
-	{
-		cout << "statistics the document spaces!" << endl;
-	}
+	// virtual void Print()
+	// {
+	// 	cout << "mul function" << endl;
+	// }
 
 	virtual void Help()
 	{
-		cout << "Function ID " << FUNC_ID << " : This function will statistics the document spaces." << endl;
+		cout << "Function ID " << FUNC_ID << " : This function will multiply two int numbers." << endl;
 	}
 
 	virtual int GetID(void)

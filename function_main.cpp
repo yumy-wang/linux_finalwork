@@ -43,6 +43,7 @@ char * cul(int x, int y, int opt)
 	else
 	{
 		cout << "Parameters error" << endl;
-		return 0;
+		char *ret = (char *)"Parameters error";
+		return ret;
 	}
 }

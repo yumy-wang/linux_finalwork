@@ -55,21 +55,21 @@ bool CPluginController::InitializeController(void)
 }
 
 
-bool CPluginController::ProcessRequest(int FunctionID)
-{
+// bool CPluginController::ProcessRequest(int FunctionID)
+// {
 
-	for(unsigned int i = 0; i < m_vpPlugin.size(); i++)
-	{
-		if(m_vpPlugin[i]->GetID() == FunctionID)
-		{
-			m_vpPlugin[i]->Print();
-			break;
-		}
-	}
+// 	for(unsigned int i = 0; i < m_vpPlugin.size(); i++)
+// 	{
+// 		if(m_vpPlugin[i]->GetID() == FunctionID)
+// 		{
+// 			m_vpPlugin[i]->Print();
+// 			break;
+// 		}
+// 	}
 
-	return true;
+// 	return true;
 
-}
+// // }
 
 
 bool CPluginController::ProcessHelp(void)

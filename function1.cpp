@@ -24,14 +24,14 @@ public:
 	{
 	}
 
-	virtual void Print()
-	{
-		cout << "statistics the document words!" << endl;
-	}
-
+	// virtual void Print()
+	// {
+	// 	cout << "add function" << endl;
+	// }
+// 
 	virtual void Help()
 	{
-		cout << "Function ID " << FUNC_ID << " : This function will statistics the document words." << endl;
+		cout << "Function ID " << FUNC_ID << " : This function will add two int numbers." << endl;
 	}
 
 	virtual int GetID(void)
